@@ -1,0 +1,146 @@
+
+.form-content{
+  text-align: left;
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 56px;
+    padding-bottom: 21px;
+  }
+  h2{
+    font-size:32px;
+    font-weight:400;
+    color:rgba(68,68,68,1);
+    line-height:44px;
+    padding-top: 20px;
+  }
+  h3{
+    font-size:28px;
+    font-weight:400;
+    color:rgba(68,68,68,1);
+    line-height:40px;
+    padding-top: 20px;
+  }
+  .content-card{
+    width: 100%;
+    padding: 21px 0;
+    border-bottom: 2px solid #DEDEDE;
+
+  }
+  .font1{
+    font-size:32px;
+    font-weight:400;
+    color:rgba(68,68,68,1);
+    line-height:44px;
+  }
+  .font2{
+    font-size:28px;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    line-height:40px;
+  }
+  .font3{
+    font-size:24px;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:34px;
+  }
+}
+
+
+
+.flex{
+  display:-webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-right{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.form-input{
+  padding: 21px 0;
+  width: 100%;
+  span{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    color:rgba(68,68,68,1);
+    line-height:44px;
+  }
+  input{
+    display: inline-block;
+    height:48px;
+    background:rgba(248,248,248,1);
+    border-radius:10px;
+    border:2px solid rgba(230,230,230,1);
+    outline: none;
+    padding: 0 10px;
+  }
+  input[type="radio"]{
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+  input[type="checkbox"]{
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+  input[type="radio"] + label::before {
+     content: "\a0"; /*不换行空格*/
+     display: inline-block;
+     vertical-align: middle;
+     width: 32px;
+     height: 32px;
+     margin-right: 16px;
+     border-radius: 50%;
+     text-indent: .15em;
+     background:rgba(196,196,196,1);
+   }
+  input[type="radio"]:checked + label::before {
+    background-image: url("../../../assets/img/yes.png");
+    background-size:32px 32px;
+    background-clip: border-box;
+  }
+  input[type="checkbox"] + label::before {
+     content: "\a0"; /*不换行空格*/
+     display: inline-block;
+     vertical-align: middle;
+     width: 32px;
+     height: 32px;
+     margin-right: 16px;
+     border-radius: 50%;
+     text-indent: .15em;
+     background:rgba(196,196,196,1);
+   }
+  input[type="checkbox"]:checked + label::before {
+    background-image: url("../../../assets/img/yes.png");
+    background-size:32px 32px;
+    background-clip: border-box;
+  }
+  //.radio:checked + label::before {
+  //  background-image: url("../../../assets/img/yes.png");
+  //  background-size:32px 32px;
+  //  background-clip: border-box;
+  //}
+  label {
+    display: inline-block;
+    font-size:28px;
+    font-weight:400;
+    color:rgba(68,68,68,1);
+    line-height:44px;
+    margin-top: 2px;
+  }
+  textarea{
+    background:rgba(248,248,248,1);
+    border-radius:0.13rem;
+    border:0.03rem solid rgba(230,230,230,1);
+    outline: none;
+    padding: 0 10px;
+  }
+}
